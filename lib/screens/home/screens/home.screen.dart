@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:remember_it/screens/home/components/appbar.component.dart';
-import 'package:remember_it/screens/home/components/optionCard.components.dart';
+
+import '../components/appbar.component.dart';
+import '../components/optionCard.components.dart';
+import '../components/projects.component.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -33,9 +35,8 @@ class HomeScreen extends StatelessWidget {
 
             // Project section
             Padding(
-              padding: EdgeInsets.only(top: 10.0),
-              child: Column(),
-            )
+                padding: EdgeInsets.only(top: 1.0, left: 10.0),
+                child: ProjectsComponent())
           ],
         ),
       ),
