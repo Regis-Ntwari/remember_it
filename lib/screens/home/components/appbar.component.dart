@@ -34,7 +34,7 @@ class AppBarComponent extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           const CircleAvatar(
                             backgroundColor: Colors.white,
@@ -43,12 +43,15 @@ class AppBarComponent extends StatelessWidget {
                               color: Color(0xFF666AFC),
                             ),
                           ),
-                          Text(
-                            DateFormat.MMMMEEEEd().format(DateTime.now()),
-                            style: TextStyle(
-                                fontFamily: 'Poppins',
-                                fontSize: textScaleFactor * 11,
-                                color: Colors.white),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 8.0),
+                            child: Text(
+                              DateFormat.MMMMEEEEd().format(DateTime.now()),
+                              style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontSize: textScaleFactor * 11,
+                                  color: Colors.white),
+                            ),
                           ),
                           Text(
                             'Dashboard',
