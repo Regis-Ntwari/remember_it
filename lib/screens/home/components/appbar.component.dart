@@ -61,7 +61,7 @@ class AppBarComponent extends StatelessWidget {
                                 color: Colors.white),
                           )
                         ]),
-                    SizedBox(
+                    const SizedBox(
                       child: CircleAvatar(
                         backgroundColor: Colors.white,
                         child: Icon(Icons.settings),
